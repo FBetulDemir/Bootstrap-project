@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Digital Library</title>
 </head>
 <body>
@@ -11,6 +12,7 @@
         <div class="container-xxl">
             <a href="#intro" class="navbar-brand">
                 <span class="fw-bold text-secondary">
+                    <i class="bi bi-book"></i>
                     DL - Digital Library
                 </span>
             </a>
@@ -32,24 +34,78 @@
             </div>      
         </div>
     </nav>
-    <section id="intro" class="p-5">
-        <div class="container-lg">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-5 text-center text-md-start">
-                    <h1>
-                        <div class="display-2">The Secret Adversary</div>
-                        <div class="display-6 text-muted">by Agatha Christie</div>
-                    </h1>
-                    <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aperiam aut quas sed hic est.</p>
-                    <a href="https://www.gutenberg.org/cache/epub/1155/pg1155-images.html" class="btn btn-secondary btn-lg">Read now</a>
+
+    <div id="intro-slider" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <section id="" class="p-5 d-block w-100">
+                <div class="container-lg">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-5 text-center text-md-start">
+                            <h1>
+                                <div class="display-2">The Secret Adversary</div>
+                                <div class="display-6 text-muted">by Agatha Christie</div>
+                            </h1>
+                            <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aperiam aut quas sed hic est.</p>
+                            <a href="https://www.gutenberg.org/cache/epub/1155/pg1155-images.html" class="btn btn-secondary btn-lg">Read now</a>
+                        </div>
+                        <div class="col-md-5 text-center d-none d-md-block">
+                            <img class="img-fluid" src="https://www.gutenberg.org/cache/epub/1155/images/cover.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-5 text-center d-none d-md-block">
-                    <img class="img-fluid" src="https://www.gutenberg.org/cache/epub/1155/images/cover.jpg" alt="">
+            </section>
+          </div>
+          <div class="carousel-item">
+            <section id="" class="p-5 d-block w-100">
+                <div class="container-lg">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-5 text-center text-md-start">
+                            <h1>
+                                <div class="display-2">Tarzan of the Apes</div>
+                                <div class="display-6 text-muted">by Edgar Rice Burroughs</div>
+                            </h1>
+                            <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aperiam aut quas sed hic est.</p>
+                            <a href="assets/tarzan.html" class="btn btn-secondary btn-lg">Read now</a>
+                        </div>
+                        <div class="col-md-5 text-center d-none d-md-block">
+                            <img class="img-fluid" src="images/tarzan-cover.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
+          </div>
+          <div class="carousel-item">
+            <section id="" class="p-5 d-block w-100">
+                <div class="container-lg">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-5 text-center text-md-start">
+                            <h1>
+                                <div class="display-2">Alice's Adventures in Wonderland</div>
+                                <div class="display-6 text-muted">by Lewis Carroll</div>
+                            </h1>
+                            <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi aperiam aut quas sed hic est.</p>
+                            <a href="assets/alice-in-wonderland.html" class="btn btn-secondary btn-lg">Read now</a>
+                        </div>
+                        <div class="col-md-5 text-center d-none d-md-block">
+                            <img class="img-fluid" src="images/alice-cover.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+          </div>
         </div>
-    </section>
-    <section id="pricing" class="bg-light mt-5">
+        <button class="carousel-control-prev" type="button" data-bs-target="#intro-slider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#intro-slider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section id="pricing" class="bg-light mt-5 p-5">
         <div class="container-lg">
             <div class="text-center">
                 <h2>Pricing Plans</h2>
@@ -89,6 +145,232 @@
                             <p class="display-5 my-4 text-primary fw-bold">$24.99</p>
                             <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque voluptates illum animi. Rem consectetur molestias, delectus et quibusdam enim. Accusantium!</p>
                             <a href="#" class="btn btn-outline-primary btn-lg mt-3">Subscribe now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="trending" class="m-5 p-5">
+        <div class="accordion" id="accordionExample">
+            <div class="text-center mb-6">
+                <h2><i class="bi bi-stars"></i>Trendy</h2>
+                <p class="lead text-muted">Top 10 on our website.</p>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button border-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    The Secret Adversary
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body text-center">
+                  <strong>by Agatha Christie</strong>
+                  <div class="container-sm">
+                    <img class="rounded col-md-3 d-block mx-auto" src="https://www.gutenberg.org/cache/epub/1155/images/cover.jpg" alt="">
+                    <a href="https://www.gutenberg.org/cache/epub/1155/pg1155-images.html" class="btn btn-secondary btn-sm m-5">Read now</a>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    The Return of Sherlock Holmes
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body text-center">
+                  <strong>by Arthur Conan Doyle</strong>
+                  <div class="container-sm">
+                    <img class="rounded col-md-3 d-block mx-auto" src="https://www.gutenberg.org/cache/epub/108/pg108.cover.medium.jpg" alt="">
+                    <a href="https://www.gutenberg.org/cache/epub/108/pg108-images.html" class="btn btn-secondary btn-sm m-5">Read now</a>
+                  </div>  
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        Alice's Adventures in Wonderland
+                  </button>
+                </h2>
+                <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-center">
+                    <strong>by Lewis Carroll</strong>
+                    <div class="container-sm">
+                        <img class="rounded col-md-3 d-block mx-auto" src="https://www.gutenberg.org/cache/epub/11/pg11.cover.medium.jpg" alt="">
+                        <a href="https://www.gutenberg.org/cache/epub/11/pg11-images.html" class="btn btn-secondary btn-sm m-5">Read now</a>
+                    </div>  
+                  </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        Gulliver's Travels
+                  </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-center">
+                    <strong>by Jonathan Swift</strong>
+                    <div class="container-sm">
+                        <img class="rounded col-md-3 d-block mx-auto" src="https://www.gutenberg.org/cache/epub/65473/pg65473.cover.medium.jpg" alt="">
+                        <a href="https://www.gutenberg.org/cache/epub/65473/pg65473-images.html" class="btn btn-secondary btn-sm m-5">Read now</a>
+                    </div> 
+                  </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    Dorothy and the Wizard in Oz
+                </button>
+              </h2>
+              <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body text-center">
+                  <strong>by L. Frank Baum</strong>
+                  <div class="container-sm">
+                    <img class="rounded col-md-3 d-block mx-auto" src="https://www.gutenberg.org/cache/epub/22566/pg22566.cover.medium.jpg" alt="">
+                    <a href="https://www.gutenberg.org/cache/epub/22566/pg22566-images.html" class="btn btn-secondary btn-sm m-5">Read now</a>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                        The Murder on the Links
+                  </button>
+                </h2>
+                <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-center">
+                    <strong>by Agatha Christie</strong>
+                    <div class="container-sm">
+                        <img class="rounded col-md-3 d-block mx-auto" src="https://www.gutenberg.org/cache/epub/58866/pg58866.cover.medium.jpg" alt="">
+                        <a href="https://www.gutenberg.org/cache/epub/58866/pg58866-images.html" class="btn btn-secondary btn-sm m-5">Read now</a>
+                    </div>  
+                  </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                        Robinson Crusoe
+                  </button>
+                </h2>
+                <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-center">
+                    <strong>by Daniel Defoe</strong>
+                    <div class="container-sm">
+                        <img class="rounded col-md-3 d-block mx-auto" src="https://www.gutenberg.org/cache/epub/70841/pg70841.cover.medium.jpg" alt="">
+                        <a href="https://www.gutenberg.org/cache/epub/70841/pg70841-images.html" class="btn btn-secondary btn-sm m-5">Read now</a>
+                    </div>  
+                  </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                     Great Expectations
+                  </button>
+                </h2>
+                <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-center">
+                    <strong>by Charles Dickens</strong>
+                    <div class="container-sm">
+                        <img class="rounded col-md-3 d-block mx-auto" src="https://www.gutenberg.org/cache/epub/1400/pg1400.cover.medium.jpg" alt="">
+                        <a href="https://www.gutenberg.org/cache/epub/1400/pg1400-images.html" class="btn btn-secondary btn-sm m-5">Read now</a>
+                    </div>  
+                  </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                        Tarzan of the Apes
+                  </button>
+                </h2>
+                <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-center">
+                    <strong>by Edgar Rice Burroughs</strong>
+                    <div class="container-sm">
+                        <img class="rounded col-md-3 d-block mx-auto" src="https://www.gutenberg.org/cache/epub/78/pg78.cover.medium.jpg" alt="">
+                        <a href="https://www.gutenberg.org/cache/epub/78/pg78-images.html" class="btn btn-secondary btn-sm m-5">Read now</a>
+                    </div>  
+                  </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                        Pride and Prejudice
+                  </button>
+                </h2>
+                <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-center">
+                    <strong>by Jane Austen</strong>
+                    <div class="container-sm">
+                        <img class="rounded col-md-3 d-block mx-auto" src="https://www.gutenberg.org/cache/epub/1342/pg1342.cover.medium.jpg" alt="">
+                        <a href="https://www.gutenberg.org/cache/epub/1342/pg1342-images.html" class="btn btn-secondary btn-sm m-5">Read now</a>
+                    </div>  
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="review" class="bg-light p-5">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Reviews <i class="bi bi-chat-left-dots"></i></h2>
+                <p>Comments from our readers</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3">
+                            <div class="pb-3">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h5 class="mb-1">Wide variety of books</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur error veniam sit expedita est illo maiores neque quos nesciunt, reprehenderit autem odio commodi labore praesentium voluptate repellat in id quisquam.</p>
+                            <small>Review by Karin</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3">
+                            <div class="pb-3">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <h5 class="mb-1">The best subscription for my family</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur error veniam sit expedita est illo maiores neque quos nesciunt, reprehenderit autem odio commodi labore praesentium voluptate repellat in id quisquam.</p>
+                            <small>Review by Olof</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3">
+                            <div class="pb-3">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <h5 class="mb-1">Good value for money</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur error veniam sit expedita est illo maiores neque quos nesciunt, reprehenderit autem odio commodi labore praesentium voluptate repellat in id quisquam.</p>
+                            <small>Review by Maria</small>
                         </div>
                     </div>
                 </div>
